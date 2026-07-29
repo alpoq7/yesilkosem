@@ -137,8 +137,8 @@ function Nav() {
     <header className="fixed top-0 z-50 w-full border-b border-forest/10 bg-cream/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#" className="flex items-center gap-2">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-forest text-cream">
-            <img src={coffeeIcon} alt="" className="h-6 w-40 object-contain" />
+          <span className="grid h-7 w-7 place-items-center rounded-full bg-forest text-cream">
+            <img src={coffeeIcon} alt="" className="h-7 w-7 object-contain" />
           </span>
           <span className="font-serif text-xl font-semibold tracking-tight text-forest-deep">
             Yeşil Köşem
