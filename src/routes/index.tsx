@@ -9,9 +9,10 @@ import {
   Menu as MenuIcon,
   ChevronLeft,
   ChevronRight,
+  Coffee,
   Info,
 } from "lucide-react";
-import coffeeIcon from "@/assets/coffee-icon.png";
+import logoMark from "@/assets/logo-mark.png";
 import tilesPhoto from "@/assets/tiles-photo.png";
 import barPhoto from "@/assets/bar-photo.png";
 import okeyTablePhoto from "@/assets/okey-table-photo.png";
@@ -137,9 +138,7 @@ function Nav() {
     <header className="fixed top-0 z-50 w-full border-b border-forest/10 bg-cream/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#" className="flex items-center gap-2">
-          <span className="grid h-7 w-7 place-items-center rounded-full bg-forest text-cream">
-            <img src={coffeeIcon} alt="" className="h-7 w-7 object-contain" />
-          </span>
+          <img src={logoMark} alt="Yeşil Köşem logosu" className="h-9 w-9 object-contain" />
           <span className="font-serif text-xl font-semibold tracking-tight text-forest-deep">
             Yeşil Köşem
           </span>
@@ -311,7 +310,7 @@ function About() {
             className="aspect-[4/5] w-full rounded-3xl object-cover"
           />
           <div className="absolute -bottom-6 -right-6 hidden max-w-[240px] rounded-2xl border border-brass/30 bg-cream p-5 shadow-xl shadow-forest-deep/10 sm:block">
-            <img src={coffeeIcon} alt="" className="h-5 w-5 object-contain" />
+            <Coffee className="h-5 w-5 text-emerald-soft" />
             <p className="mt-2 font-serif text-lg leading-snug text-forest-deep">
               "Bir çay, bir oyun, bir sohbet. Yeşil Köşem'de."
             </p>
@@ -689,9 +688,7 @@ function Footer() {
     <footer className="bg-forest-deep px-5 py-12 text-cream/70 lg:px-8">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
         <div className="flex items-center gap-2">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-cream/10 text-brass">
-            <img src={coffeeIcon} alt="" className="h-8 w-8 object-contain" />
-          </span>
+          <img src={logoMark} alt="Yeşil Köşem logosu" className="h-9 w-9 object-contain" />
           <span className="font-serif text-lg font-semibold text-cream">
             Yeşil Köşem
           </span>
