@@ -138,7 +138,7 @@ function Nav() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#" className="flex items-center gap-2">
           <span className="grid h-9 w-9 place-items-center rounded-full bg-forest text-cream">
-            <img src={coffeeIcon} alt="" className="h-6 w-20 object-contain" />
+            <img src={coffeeIcon} alt="" className="h-6 w-40 object-contain" />
           </span>
           <span className="font-serif text-xl font-semibold tracking-tight text-forest-deep">
             Yeşil Köşem
