@@ -221,7 +221,7 @@ function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-lg text-cream/80">
             Otomatik okey masaları, taze demlenen çay ve boğazı gören
-            pencereler. Dostlarınla oyun keyfi için ikinci adresin.
+            pencereler. Dostlarınla oyun keyfi için birinci adresin.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a
