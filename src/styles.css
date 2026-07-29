@@ -1,0 +1,85 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-forest: var(--forest);
+  --color-forest-deep: var(--forest-deep);
+  --color-emerald-soft: var(--emerald-soft);
+  --color-cream: var(--cream);
+  --color-brass: var(--brass);
+  --color-brass-soft: var(--brass-soft);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Brand palette */
+  --forest: #1B3B2B;
+  --forest-deep: #0F2A1D;
+  --emerald-soft: #2D5A43;
+  --cream: #F9F8F3;
+  --brass: #C9A961;
+  --brass-soft: #E4CC93;
+
+  --background: var(--cream);
+  --foreground: var(--forest-deep);
+  --card: #ffffff;
+  --card-foreground: var(--forest-deep);
+  --primary: var(--forest);
+  --primary-foreground: var(--cream);
+  --secondary: #EFEDE3;
+  --secondary-foreground: var(--forest-deep);
+  --muted: #EFEDE3;
+  --muted-foreground: #5B6B5F;
+  --accent: var(--brass);
+  --accent-foreground: var(--forest-deep);
+  --border: #E1DED0;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
