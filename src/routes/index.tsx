@@ -9,7 +9,6 @@ import {
   Menu as MenuIcon,
   ChevronLeft,
   ChevronRight,
-  Instagram,
   Dice5,
   Info,
 } from "lucide-react";
@@ -666,6 +665,25 @@ function InfoRow({
   );
 }
 
+function InstagramIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  );
+}
+
 function Footer() {
   return (
     <footer className="bg-forest-deep px-5 py-12 text-cream/70 lg:px-8">
@@ -682,11 +700,13 @@ function Footer() {
           © {new Date().getFullYear()} Yeşil Köşem · Üsküdar, İstanbul
         </p>
         <a
-          href="#"
+          href="https://www.instagram.com/yesilkosem.tr"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Instagram"
           className="grid h-10 w-10 place-items-center rounded-full border border-cream/15 transition hover:border-brass hover:text-brass"
         >
-          <Instagram className="h-4 w-4" />
+          <InstagramIcon className="h-4 w-4" />
         </a>
       </div>
     </footer>
