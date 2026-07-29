@@ -9,7 +9,6 @@ import {
   Menu as MenuIcon,
   ChevronLeft,
   ChevronRight,
-  Dice5,
   Coffee,
   Info,
 } from "lucide-react";
@@ -139,7 +138,6 @@ function Nav() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#" className="flex items-center gap-2">
           <span className="grid h-9 w-9 place-items-center rounded-full bg-forest text-cream">
-            <Dice5 className="h-4 w-4" />
             <Coffee className="h-4 w-4" />
           </span>
           <span className="font-serif text-xl font-semibold tracking-tight text-forest-deep">
@@ -313,7 +311,6 @@ function About() {
             className="aspect-[4/5] w-full rounded-3xl object-cover"
           />
           <div className="absolute -bottom-6 -right-6 hidden max-w-[240px] rounded-2xl border border-brass/30 bg-cream p-5 shadow-xl shadow-forest-deep/10 sm:block">
-            <Dice5 className="h-5 w-5 text-emerald-soft" />
             <Coffee className="h-5 w-5 text-emerald-soft" />
             <p className="mt-2 font-serif text-lg leading-snug text-forest-deep">
               "Bir çay, bir oyun, bir sohbet. Yeşil Köşem'de."
@@ -693,7 +690,6 @@ function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
         <div className="flex items-center gap-2">
           <span className="grid h-9 w-9 place-items-center rounded-full bg-cream/10 text-brass">
-            <Dice5 className="h-4 w-4" />
             <Coffee className="h-4 w-4" />
           </span>
           <span className="font-serif text-lg font-semibold text-cream">
